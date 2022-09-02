@@ -17,10 +17,17 @@
     margin-right: 5px;
 }
 .subtotal > button{
-    background: #f0c14b;
+    background: linear-gradient(to bottom, #fff, #f0c14b);
     border-radius: 2px;
     width: 100%;
     border: 1px solid #a88734;
     height: 30px;
     color: #111;
+    cursor: pointer;
 }
+.subtotal > button{
+    background-color: #f0c14b;
+}
+.subtotal > button:active {
+    transform: translateY(4px);
+  }

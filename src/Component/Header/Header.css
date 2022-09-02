@@ -54,6 +54,9 @@
     align-items: center;
     color: #fff;
 }
+.header_optionBasket:active {
+    transform: translateY(4px);
+  }
 .header__basketCount{
     margin-left: 10px;
     margin-right: 10px;
