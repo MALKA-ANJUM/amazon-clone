@@ -1,0 +1,26 @@
+.FooterNav{
+    display: table-cell;
+    padding: 0 10px;
+}
+.FooterNav h4{
+    color: #D6D7D7;
+    font-size: 16px;
+    margin: 6px 0 14px 0;
+    text-align: center;
+}
+.FooterNav ul{
+    padding-left: 0;
+}
+.FooterNav ul li{
+    list-style: none;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.FooterNav ul li a:hover{
+    text-decoration: underline;
+}
+.FooterNav ul li a{
+    color: #D6D7D7;
+}

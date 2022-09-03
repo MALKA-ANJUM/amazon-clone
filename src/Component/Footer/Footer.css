@@ -1,0 +1,32 @@
+.Footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    
+}
+.backToTop button{
+    text-align: center;
+    color: #FFFAFA;
+    padding: 15px 0;
+    line-height: 19px;
+    font-size: 13px;
+    background-color: #37475A;
+    width: 100%;
+    border: none;
+    position: relative;
+    bottom: 0;
+}
+.Footer_Navbar{
+    background-color: #232F3E;
+}
+.footer_nav{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5em 0;
+}

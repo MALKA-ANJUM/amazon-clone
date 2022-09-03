@@ -22,7 +22,7 @@ const Login = () => {
         .catch(error => {alert(error.message)})
     }
     const signIn = e => {
-        e.preventDefault() 
+        e.preventDefault()
         auth.signInWithEmailAndPassword(email, password)
           .then(auth => {
           history('/')
@@ -33,7 +33,7 @@ const Login = () => {
     <div className="login">
       <Link to="/">
         <img
-          className="login__logo"
+          className="login__logo" alt="logo"
           src="https://pngimg.com/uploads/amazon/amazon_PNG1.png"
         />
       </Link>
