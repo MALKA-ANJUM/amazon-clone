@@ -33,6 +33,8 @@ const Payment = () => {
     
   }, [basket])
 
+  console.log("the secret is>>>>", clientSecret);
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setProcessing(true)
@@ -42,6 +44,7 @@ const Payment = () => {
         card: element.getElement(CardElement)
       }
     }).then(({ paymentIntent}) => {
+      //paymentIntent = payment confirmtion
       setSucceeded(true)
       setError(null)
       setProcessing(false)
