@@ -1,11 +1,5 @@
 .Footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-attachment: scroll;
-    background-position: 0% 0%;
-    
+    min-height: calc(100vh - 0);
 }
 .backToTop button{
     text-align: center;
