@@ -1153,3 +1153,5 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-09-04T16:05:32.509Z] shutdown requested via /__/quitquitquit
 
 [info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2022-09-04T16:44:42.442Z] File E:\amazon-clone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\amazon-clone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-09-04T16:44:43.728Z] Validating nodejs source
