@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Payment/Payment.css";
+import { NumericFormat } from "react-number-format";
 import { useStateValue } from "../../StateProvider";
-import Currencyformat from "react-currency-format";
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
 import { Link, useNavigate } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
@@ -105,19 +105,18 @@ const Payment = () => {
             <form onSubmit={handleSubmit}>
               <CardElement onChange={handleChange}></CardElement>
               <div className="payment__priceContainer">
-                <Currencyformat
-                  renderText={(value) => (
-                    <>
-
-                      <h3>Order Total: {value}</h3>
-                    </>
-                  )}
-                  decimalScale={2}
-                  value={getBasketTotal(basket)}
-                  displayType={"text"}
-                  thousandSeparator={true}
-                  prefix={"₹"}
-                />
+              <NumericFormat
+  value={getBasketTotal(basket)}
+  displayType="text"
+  thousandSeparator={true}
+  prefix="₹"
+  decimalScale={2}
+  renderText={(value) => (
+    <>
+      <h3>Order Total: {value}</h3>
+    </>
+  )}
+/>
                 <button disabled={processing || disabled || succeeded}>
                   <span>
                     {processing ?  <p>Processing</p> : "Buy Now"}
